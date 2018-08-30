@@ -1,0 +1,45 @@
+{
+	"type": "Collection",
+	"properties": {
+		"quizid": {
+			"name": "quizid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "quizid",
+			"order": 0
+		},
+		"quizquestionid": {
+			"name": "quizquestionid",
+			"type": "string",
+			"typeLabel": "string",
+			"required": true,
+			"id": "quizquestionid",
+			"order": 1
+		},
+		"index": {
+			"name": "index",
+			"type": "number",
+			"typeLabel": "number",
+			"required": true,
+			"id": "index",
+			"order": 2
+		},
+		"text": {
+			"name": "text",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "text",
+			"order": 3
+		},
+		"attributemodifiers": {
+			"name": "attribute_modifiers",
+			"type": "string",
+			"typeLabel": "string",
+			"required": false,
+			"id": "attribute_modifiers",
+			"order": 4
+		}
+	}
+}

@@ -1,0 +1,175 @@
+<quizzes>
+
+  <!-- BEGIN QUIZ: WHAT KIND OF PERSON ARE YOU? -->
+  <quiz>
+    <title>
+      What kind of a person are you?
+    </title>
+    <description>
+      Take this quiz to see what kind of person you REALLY are! Find out once and for all!
+    </description>
+    <questions>
+
+      <question>
+        <title>
+          Starving Friends
+        </title>
+        <text>
+          You're eating a sandwich, and your friend is starving.\nWhat do you do?
+        </text>
+        <answers>
+          <answer>
+            <text>
+              Give your friend half the sandwich, and pat yourself on the back for being an incredible person
+            </text>
+            <attribute_modifiers>
+              ego=+5;empathy=+5;goodness=+5;humor=-10;
+            </attribute_modifiers>
+          </answer>
+          <answer>
+            <text>
+              Tell your friend life isn't always fair
+            </text>
+            <attribute_modifiers>
+              ego=+2;empathy=-5;goodness=-5;humor=-10;
+            </attribute_modifiers>
+          </answer>
+          <answer>
+            <text>
+              Start to offer your friend a sandwich, but then pull it away at the last moment and berate him for being too incompetant to feed himself
+            </text>
+            <attribute_modifiers>
+              ego=+5;empathy=-5;goodness=-10;humor=-10;
+            </attribute_modifiers>
+          </answer>
+          <answer>
+            <text>
+              Slap your friend in the face with your ham sandwich, then continue eating
+            </text>
+            <attribute_modifiers>
+              ego=+5;empathy=-5;goodness=-5;humor=+10;
+            </attribute_modifiers>
+          </answer>
+        </answers>
+      </question>
+
+
+
+      <question>
+        <title>
+          The Poor Old Lady
+        </title>
+        <text>
+          You're eating at the park, when suddenly an old lady walking past you, slips and falls on the floor right in front of you. How do you react?
+        </text>
+        <answers>
+          <answer>
+            <text>
+              Rush to help her! She could be hurt!
+            </text>
+            <attribute_modifiers>
+              ego=-10;empathy=+10;humor=-10;
+            </attribute_modifiers>
+          </answer>
+          <answer>
+            <text>
+              Realize every living being will one day disappear into the abyss. Then let the darkness consume you as you both laugh and cry uncontrollably.
+            </text>
+            <attribute_modifiers>
+              ego=-20;empathy=-10;humor=-10;
+            </attribute_modifiers>
+          </answer>
+          <answer>
+            <text>
+              Try to distract her from the pain by also falling down, but in an even more ridiculous way if possible.
+            </text>
+            <attribute_modifiers>
+              ego=-10;empathy=+10;humor=+10;
+            </attribute_modifiers>
+          </answer>
+          <answer>
+            <text>
+              Realize she probably killed a bunch of ants, and immediately burst into tears.
+            </text>
+            <attribute_modifiers>
+              ego=-10;empathy=+10;humor=-10;
+            </attribute_modifiers>
+          </answer>
+        </answers>
+      </question>
+
+      <question>
+        <title>Spoiled Milk</title>
+        <text>
+          You're really hungry and want to pour yourself a nice bowl of cereal. There's only one problem: The milk smells strange.\n\nYou don't want to get a sick stomach, but you can't be sure. What do you do?
+        </text>
+        <answers>
+          <answer>
+            <text>
+              Use the milk for your cereal and see what happens. You're too hungry to resist, wouldn't want anyone else to get sick.
+            </text>
+            <attribute_modifiers>
+              ego=-10;empathy=+10;humor=-5;
+            </attribute_modifiers>
+          </answer>
+          <answer>
+            <text>
+              Ask your spouse to come in, and without explaining the situation, instruct them to take a deep breath. If they gag, laugh uncontrollably and throw the milk away.
+            </text>
+            <attribute_modifiers>
+              ego=+5;empathy=-10;humor=+10;
+            </attribute_modifiers>
+          </answer>
+          <answer>
+            <text>
+              Pour a nice tall glass for your spouse, and wait to see what happens.
+            </text>
+            <attribute_modifiers>
+              ego=+5;empathy=-10;humor=-10;
+            </attribute_modifiers>
+          </answer>
+        </answers>
+      </question>
+
+    </questions>
+
+    <characters>
+
+      <character>
+        <title>A Piece of Crap</title>
+        <description>
+          It's likely you enjoy your life, but there is something very wrong with you. You probably gain strength by ruining other people's lives.
+        </description>
+        <attributes>
+          ego=+50;empathy=-50;humor=-50;
+        </attributes>
+      </character>
+
+      <character>
+        <title>Boring</title>
+        <description>
+          You may be a good person, but will most likely die alone.
+        </description>
+        <attributes>
+          ego=-50;empathy=+50;humor=-50;
+        </attributes>
+      </character>
+
+      <character>
+        <title>Hilarious Waste of Time</title>
+        <description>
+          People find you hilarious, and you're usually the life of the party. That's why it's so unfortunate that you are most likely throwing your life away on constant trivial shenanigans.
+        </description>
+        <attributes>
+          ego=0;empathy=0;humor=+50;
+        </attributes>
+      </character>
+
+    </characters>
+  </quiz>
+
+
+
+
+
+</quizzes>

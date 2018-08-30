@@ -1,0 +1,104 @@
+<quizzes>
+  <quiz>
+    <title>What Star Wars Prequil Character Are You?</title>
+    <description>
+      Take this quiz to find out which Jedi you are most similar to. It's fun, fast, and easy. Try it now!
+    </description>
+    <questions>
+      <question>
+        <title>Helping a Citizen</title>
+        <text>
+          A terrified citizen is about to be beaten and robbed by criminals. He offers to pay you for your help.\n\nWhat do you do?
+        </text>
+        <answers>
+          <answer>
+            <text>Kill the criminals, save the citizen, and take your reward.</text>
+            <attribute_modifiers>good+1;ruthless+10;greedy+10</attribute_modifiers>
+          </answer>
+          <answer>
+            <text>Scare away the criminals and only defend yourself if needed. Refuse any reward.</text>
+            <attribute_modifiers>good+10;ruthless-10;greedy-10</attribute_modifiers>
+          </answer>
+          <answer>
+            <text>Kill the criminals, and the citizen, and take all their money.</text>
+            <attribute_modifiers>good-10;ruthless+10;greedy+10</attribute_modifiers>
+          </answer>
+        </answers>
+      </question>
+      <question>
+        <title>Choosing Your Alliances</title>
+        <text>
+          Everyone wants you to join their alliance. Who do you choose?
+        </text>
+        <answers>
+          <answer>
+            <text>Yoda</text>
+            <attribute_modifiers>good=+10;ruthless=-10;greedy=-10;</attribute_modifiers>
+          </answer>
+          <answer>
+            <text>Darth Sidious</text>
+            <attribute_modifiers>good-10;ruthless+5;greedy+0</attribute_modifiers>
+          </answer>
+          <answer>
+            <text>Count Dooku</text>
+            <attribute_modifiers>good-5;ruthless+10;greedy+0</attribute_modifiers>
+          </answer>
+          <answer>
+            <text>The Galactic Bankers</text>
+            <attribute_modifiers>good+0;ruthless+0;greedy+10</attribute_modifiers>
+          </answer>
+        </answers>
+      </question>
+      <question>
+        <title>The Jedi Council</title>
+        <text>
+          You have just been appointed to the Jedi Council, but you have NOT been granted the rank of master.\n\nWhat do you do?
+        </text>
+        <answers>
+          <answer>
+            <text>Accept your place in the council, graciously</text>
+            <attribute_modifiers>good+5;ruthless-10;greedy+0</attribute_modifiers>
+          </answer>
+          <answer>
+            <text>Whine and Bellyache about how much you deserve to be granted the rank of master</text>
+            <attribute_modifiers>good-5;ruthless-2;greedy+5</attribute_modifiers>
+          </answer>
+          <answer>
+            <text>Give Yoda the bird and quit the Jedi Order</text>
+            <attribute_modifiers>good-10;ruthless+10;greedy+5</attribute_modifiers>
+          </answer>
+        </answers>
+      </question>
+
+    </questions>
+
+    <characters>
+      <character>
+        <title>Obiwan Kenobi</title>
+        <description>
+          You are a fearless warrior, full of good, and a champion of justice.
+        </description>
+        <attributes>good=+20;ruthless=+5;greedy=-20</attributes>
+      </character>
+
+      <character>
+        <title>Count Dooku</title>
+        <description>
+          You are ruthless, evil, and greedy. You'll do anything to conquer the galaxy and become even more powerful than your master. If it meant victory, you would even give Annakin a hand ;)
+        </description>
+        <attributes>good=-20;ruthless=+20;greedy=+20</attributes>
+      </character>
+
+      <character>
+        <title>Anakin Skywalker</title>
+        <description>
+          Neither good nor evil, you are volatile and conflicted; Ruthless and ambitious. The future of the galaxy may depend on you.
+        </description>
+        <attributes>
+          good=0;ruthless=10;greedy=+20
+        </attributes>
+      </character>
+
+    </characters>
+  </quiz>
+</quizzes>

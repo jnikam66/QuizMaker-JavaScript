@@ -1,0 +1,373 @@
+/*
+  Old color scheme:
+  https://color.adobe.com/create/color-wheel/?base=2&rule=Analogous&selected=3&name=My%20Color%20Theme&mode=rgb&rgbvalues=1,0.14440744429234187,0.872589706239858,0.5080930679809665,0.1314107743060311,0.91,0.1944074442923419,0.2827304035862843,1,0.25848873069104183,0.7054906793243845,0.91,0.4696909341331932,1,0.8502518468261324&swatchOrder=0,1,2,3,4
+*/
+
+/*
+  csslint
+    important: false,
+    order-alphabetical: false,
+    box-sizing : false
+*/
+
+
+@font-face {
+  font-family: 'airstreamregular';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/Airstream-webfont.eot');
+  src: url('fonts/Airstream-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/Airstream-webfont.woff') format('woff'), url('fonts/Airstream-webfont.ttf') format('truetype'), url('fonts/Airstream-webfont.svg#airstreamregular') format('svg');
+}
+
+@font-face {
+  font-family: 'lakeshore';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/LAKESHOR-webfont.eot');
+  src: url('fonts/LAKESHOR-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/LAKESHOR-webfont.woff') format('woff'), url('fonts/LAKESHOR-webfont.ttf') format('truetype'), url('fonts/LAKESHOR-webfont.svg#lakeshore') format('svg');
+}
+/*
+body {
+  background-color: #42B4E8;
+  color: #FFFFFF;
+  margin: 0;
+  padding-bottom: 5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+*/
+body .main-header {
+  font-family: "lakeshore";
+  font-size: 22pt;
+  margin: auto;
+  text-align: center;
+}
+
+body .main-content hr {
+  background-color: #FFFFFF;
+  border-style: none;
+  height: 1px;
+  width: 50%;
+}
+
+div[data-role=mode-chooser] {
+  margin: auto;
+  width: 50%;
+}
+div[data-role=mode-chooser] header {
+  text-align: center;
+}
+div[data-role=mode-chooser] ul[data-role=mode-list] {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  padding: 0;
+}
+div[data-role=mode-chooser] ul[data-role=mode-list] li {
+  list-style-type: none;
+}
+
+div[data-mode] {
+  padding: 1em;
+}
+
+/**
+  Make a Quiz
+*/
+div[data-mode=make-quiz] {
+  margin: auto;
+}
+
+div[data-mode=make-quiz] form {
+  margin: 0;
+  padding: 0;
+}
+
+div[data-mode=make-quiz] form header {
+  font-family: "airstreamregular";
+  font-size: 50pt;
+  text-align: center;
+}
+
+div[data-mode=make-quiz] form label {
+  width: 50%;
+  text-align: left;
+}
+
+div[data-mode=make-quiz] textarea {
+  border-radius: 0.25rem!important;
+  height: 3em;
+  margin-bottom: 3em;
+  padding: 0.5em;
+  width: 100%;  /* This is a bit hacky */
+}
+div[data-mode=make-quiz] input[type=text] {
+  box-sizing: border-box;
+  border-radius: 0.25rem!important;
+  margin-bottom: 2em;
+  width: 100%;  /* This is a bit hacky */
+  padding: .5rem .75rem;
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #464a4c;
+  background-color: #fff;
+  background-image: none;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgb(0,0,0);
+  border: 1px solid rgba(0,0,0,.15);
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+
+div[data-mode=make-quiz] div[data-element-role=make-quiz-instructions] {
+  box-sizing: border-box;
+  border-style: dashed;
+  border-width: 1px;
+  border-color: #FFFFFF;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2em;
+  width: 75%;
+}
+
+div[data-mode=make-quiz] ul[data-element-role=questions] {
+  padding: 0;
+}
+
+/* Only the last question will have a visible "Delete me" button */
+div[data-mode=make-quiz] li[data-element-role=question] button[data-button-role=delete-question] {
+  display: none;
+}
+div[data-mode=make-quiz] li[data-element-role=question]:last-child button[data-button-role=delete-question] {
+  display: inline;
+}
+
+div[data-mode=make-quiz] li[data-element-role=question] {
+  list-style-type: none;
+  margin-top: 2em;
+}
+
+div[data-mode=make-quiz] li[data-element-role=question] hr {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
+  border-style: solid;
+  border-width: 1px;
+  height: 1px;
+  margin: 1em;
+  width: 90%;
+}
+
+/* Last question won't have an HR after it */
+div[data-mode=make-quiz] li[data-element-role=question]:last-child hr {
+  background-color: transparent;
+  border-style: none;
+  height: 0;
+  width: 0;
+}
+
+div[data-mode=make-quiz] ul[data-element-role=answers] {
+  border-color: #FFFFFF;
+  border-style: none;
+  border-width: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  text-align: center;
+  width: 90%;
+}
+div[data-mode=make-quiz] ul[data-element-role=answers] li[data-element-role=answer] {
+  list-style-type: none;
+  margin-top: 2em;
+}
+
+/* Only the last answer will have a visible "Delete me" button */
+div[data-mode=make-quiz] ul[data-element-role=answers] li[data-element-role=answer] button[data-button-role=delete-answer] {
+  display: none;
+  margin: auto;
+}
+div[data-mode=make-quiz] ul[data-element-role=answers] li[data-element-role=answer]:last-child button[data-button-role=delete-answer] {
+  display: inline;
+}
+
+/* The last answer won't have an HR */
+div[data-mode=make-quiz] ul[data-element-role=answers] li[data-element-role=answer] hr {
+  background-color: #FFFFFF;
+  border-style: none;
+  height: 1px;
+  margin: auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  width: 75%;
+}
+div[data-mode=make-quiz] ul[data-element-role=answers] li[data-element-role=answer]:last-child hr {
+  background-color: transparent;
+  height: 0;
+  width: 0;
+}
+
+div[data-mode=make-quiz] ul[data-element-role=answers] li[data-element-role=answer] .hint {
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+div[data-mode=make-quiz] ul[data-element-role=quiz-result-characters] {
+  border-color: #FFFFFF;
+  border-style: none;
+  border-width: 1px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  text-align: left;
+}
+
+/* Only the last quiz result character will have a visible "Delete me" button */
+div[data-mode=make-quiz] ul[data-element-role=quiz-result-characters] li[data-element-role=quiz-result-character] button[data-button-role=delete-quiz-result-character] {
+  display: none;
+}
+div[data-mode=make-quiz] ul[data-element-role=quiz-result-characters] li[data-element-role=quiz-result-character]:last-child button[data-button-role=delete-quiz-result-character] {
+  display: inline;
+}
+
+div[data-mode=make-quiz] ul[data-element-role=quiz-result-characters] li[data-element-role=quiz-result-character] {
+  list-style-type: none;
+  text-align: center;
+}
+
+/* The last quiz result character won't have an HR after */
+div[data-mode=make-quiz] ul[data-element-role=quiz-result-characters] li[data-element-role=quiz-result-character] hr {
+  background-color: #FFFFFF;
+  border-style: none;
+  height: 1px;
+  margin: auto;
+  margin-bottom: 1em;
+  margin-top: 1em;
+  width: 75%;
+}
+div[data-mode=make-quiz] ul[data-element-role=quiz-result-characters] li[data-element-role=quiz-result-character]:last-child hr {
+  background-color: transparent;
+  height: 0;
+  width: 0;
+}
+
+div[data-mode="make-quiz"] p[data-paragraph-role="quiz-submit-cancel-buttons"] {
+  text-align: center;
+}
+/*
+div[data-mode=make-quiz] button[data-button-role="submit-quiz"] {
+  display: inline;
+}
+*/
+
+div[data-element-role=make-quiz-success-message] header {
+  font-family: "airstreamregular";
+  font-size: 30pt;
+  text-align: center;
+}
+div[data-element-role=make-quiz-success-message] p {
+  text-align: center;
+}
+
+/**
+  Take a Quiz
+*/
+/*
+div[data-mode=take-quiz] {
+}
+*/
+
+div[data-mode=take-quiz] div[data-element-role=choose-quiz] ul[data-element-role=quiz-list] {
+  list-style-type: none;
+  padding: 0;
+}
+
+div[data-mode=take-quiz] button[data-button-role=quiz-button] {
+  margin: 1em;
+}
+
+div[data-mode=take-quiz] ul[data-element-role=quiz-questions] {
+  padding: 0;
+}
+div[data-mode=take-quiz] ul[data-element-role=quiz-questions] li[data-element-role=quiz-question] {
+  list-style-type: none;
+}
+div[data-mode=take-quiz] ul[data-element-role=quiz-questions] li[data-element-role=quiz-question] header {
+  font-family: "airstreamregular";
+  font-size: 30pt;
+}
+div[data-mode=take-quiz] ul[data-element-role=quiz-questions] li[data-element-role=quiz-question] p[data-element-role=quiz-question-text] {
+  white-space: pre-line;
+}
+div[data-mode=take-quiz] ul[data-element-role=quiz-questions] ul[data-element-role=quiz-question-answers] {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+div[data-mode=take-quiz] ul[data-element-role=quiz-questions] li[data-element-role=quiz-question-answer] {
+  list-style-type: none;
+}
+
+/*
+  Disable most of the original styling in favor of bootstrap
+div[data-mode=take-quiz] ul[data-element-role=quiz-questions] li[data-element-role=quiz-question-answer] button[data-element-role=answer-select-button] {
+  background-color: transparent;
+  border-color: transparent;
+  border-style: dashed;
+  border-width: 1px;
+  color: #FFFFFF;
+  cursor: pointer;
+  padding: 1em;
+  text-align: left;
+}
+div[data-mode=take-quiz] ul[data-element-role=quiz-questions] li[data-element-role=quiz-question-answer] button[data-element-role=answer-select-button]:hover {
+  border-color: #FFFFFF;
+}
+div[data-mode=take-quiz] ul[data-element-role=quiz-questions] li[data-element-role=quiz-question-answer] button[data-element-role=answer-select-button]:selected {
+  border-color: #FFFFFF;
+  border-style: solid;
+}
+*/
+div[data-mode=take-quiz] ul[data-element-role=quiz-questions] li[data-element-role=quiz-question-answer] button[data-element-role=answer-select-button] {
+  margin: 1em;
+}
+
+div[data-mode=take-quiz] ul[data-element-role=quiz-results] {
+  padding: 0;
+}
+div[data-mode=take-quiz] ul[data-element-role=quiz-results] li[data-element-role=quiz-result-character] {
+  list-style-type: none;
+}
+div[data-mode=take-quiz] ul[data-element-role=quiz-results] li[data-element-role=quiz-result-character] header {
+  font-family: "airstreamregular";
+  font-size: 30pt;
+}
+div[data-mode=take-quiz] ul[data-element-role=quiz-results] li[data-element-role=quiz-result-character] header:before {
+  content: "Result: ";
+}
+
+.alignment{
+	/* text-align: -webkit-auto; */
+  text-align: left;
+}
+
+.marginButton{
+	margin: 1%;
+}
+
+.marginHeader{
+	margin-top: 10%
+}
+/**
+  Misc
+*/
+.hideUntilLoad {
+  display:none;
+}
+.startHidden {
+  display:none;
+}
+.hide{
+  display : none!important;
+}
